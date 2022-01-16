@@ -57,7 +57,7 @@ var debrief = {
     var false_alarm_rate = Math.round(jsPsych.data.get().filter({false_alarm: 1}).count() / 9 * 100);
     return "<p>あなたの正答率は，<strong>"+correct_rate+"%</strong>でした。</p> " +
     "<p>そして，お手つき率(間違ってnを押した確率)は，<strong>"+false_alarm_rate+"%</strong>でした。</p> " +
-    "<p>キーボードのキーをどれか押すと，課題は終わります。</p>";
+    "<p>キーボードのキーをどれか押すと，テスト課題が終わります。</p>";
   }
 };
 /*タイムラインの設定*/
