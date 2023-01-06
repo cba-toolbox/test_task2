@@ -53,8 +53,8 @@ var cp = {
 var debrief = {
   type: "html-keyboard-response",
   stimulus: function() {
-    var correct_rate = Math.round(jsPsych.data.get().filter({correct: 1}).count() / 9 * 100);
-    var false_alarm_rate = Math.round(jsPsych.data.get().filter({false_alarm: 1}).count() / 9 * 100);
+    var correct_rate = Math.round(jsPsych.data.get().filter({correct: 1}).count() / 1 * 100);
+    var false_alarm_rate = Math.round(jsPsych.data.get().filter({false_alarm: 1}).count() / 8 * 100);
     return "<p>あなたの正答率は，<strong>"+correct_rate+"%</strong>でした。</p> " +
     "<p>そして，お手つき率(間違ってnを押した確率)は，<strong>"+false_alarm_rate+"%</strong>でした。</p> " +
     "<p>キーボードのキーをどれか押すと，テスト課題が終わります。</p>";
